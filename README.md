@@ -1,4 +1,4 @@
-# Benchmark instances and Detailed Results for the DRPUDEC paper
+# Benchmark instances and detailed results for the DRPUDEC paper
 
 This repository contains all benchmark instances and the complete set of detailed results associated with the paper:
 
