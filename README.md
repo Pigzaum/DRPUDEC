@@ -35,8 +35,6 @@ The benchmark instances are located in the `instances/` folder, organized into t
 
 The file [`results/DRPUDEC_detailed_results.ods`](results/DRPUDEC_detailed_results.ods) contains the detailed outcomes of our experiments for all tested configurations.
 
-If preferred, a `.csv` version can be provided for easier programmatic access.
-
 ---
 
 ## References
