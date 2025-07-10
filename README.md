@@ -1,14 +1,14 @@
-# Benchmark Instances and Detailed Results for the DRPUDEC paper
+# Benchmark instances and Detailed Results for the DRPUDEC paper
 
 This repository contains all benchmark instances and the complete set of detailed results associated with the paper:
 
 > **"A Dynamic Drone Routing Problem with Uncertain Demand and Energy Consumption"**
 
-The benchmark instances are adapted from those of Ulmer and Thomas [[1](#references)], which we obtained directly from the first author. They provided 400 instances with 500 customers each: 200 generated using a uniform distribution and 200 using a normal distribution for customer coordinates. From each set of 200, we randomly selected 50 and adapted them for use in this study.
+The benchmark instances are derived from those of Ulmer and Thomas [[1](#references)], which we obtained directly from the first author. They provided 400 instances with 500 customers each: 200 generated using a uniform distribution and 200 using a normal distribution for customer coordinates. From each set of 200, we randomly selected 50 and adapted them for use in this study.
 
-First, we reduced all pairwise distances by 15% to account for the fact that Ulmer and Thomas [[1](#references)] designed the original instances for a heterogeneous fleet (drones and ground vehicles), whereas our model only considers drones. After scaling the distances, we removed all unreachable customers—i.e., customers who cannot be served via a drone round trip due to battery limitations.
+First, we reduced all pairwise distances by 15% to account for the fact that Ulmer and Thomas [[1](#references)] designed the original instances for a heterogeneous fleet (drones and ground vehicles), whereas our model only considers drones. After scaling the distances, we removed all unreachable customers, i.e., customers who cannot be served via a drone round trip due to battery limitations.
 
-Next, we randomly sampled customers and created three sets of instances with $m \in \{200, 300, 400\}$, resulting in a total of 300 instances. In each instance, a customer node $r$ is assigned:
+Then, we randomly sampled customers and created three sets of instances with $m \in \{200, 300, 400\}$, resulting in a total of 300 instances. In each instance, a customer node $r$ is assigned:
 
 - A demand $q_r \in [0.225\text{ kg}, 1.5\text{ kg}]$;
 - A service time $\eta = 3$ minutes;
