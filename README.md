@@ -2,11 +2,11 @@
 
 This repository contains all benchmark instances and the complete set of detailed results associated with the paper:
 
-> **"A Dynamic Drone Routing Problem with Uncertain Demand and Energy Consumption"**
+> **"A Dynamic Drone Routing Problem with Uncertain Demand and Energy Consumption" [[1](#references)]**
 
-The benchmark instances are derived from those of Ulmer and Thomas [[1](#references)], which we obtained directly from the first author. They provided 400 instances with 500 customers each: 200 generated using a uniform distribution and 200 using a normal distribution for customer coordinates. From each set of 200, we randomly selected 50 and adapted them for use in this study.
+The benchmark instances are derived from those of Ulmer and Thomas [[2](#references)], which we obtained directly from the first author. They provided 400 instances with 500 customers each: 200 generated using a uniform distribution and 200 using a normal distribution for customer coordinates. From each set of 200, we randomly selected 50 and adapted them for use in this study.
 
-First, we reduced all pairwise distances by 15% to account for the fact that Ulmer and Thomas [[1](#references)] designed the original instances for a heterogeneous fleet (drones and ground vehicles), whereas our model only considers drones. After scaling the distances, we removed all unreachable customers, i.e., customers who cannot be served via a drone round trip due to battery limitations.
+First, we reduced all pairwise distances by 15% to account for the fact that Ulmer and Thomas [[2](#references)] designed the original instances for a heterogeneous fleet (drones and ground vehicles), whereas our model only considers drones. After scaling the distances, we removed all unreachable customers, i.e., customers who cannot be served via a drone round trip due to battery limitations.
 
 Then, we randomly sampled customers and created three sets of instances with $m \in \{200, 300, 400\}$, resulting in a total of 300 instances. In each instance, a customer node $r$ is assigned:
 
@@ -39,4 +39,7 @@ The file [`results/DRPUDEC_detailed_results.ods`](results/DRPUDEC_detailed_resul
 
 ## References
 
-**[\[1\] M. W. Ulmer and B. W. Thomas. Same-day delivery with heterogeneous fleets of drones and vehicles. Networks, 72(4):475–505, 2018]( https://doi.org/10.1002/net.21855)**
+**[\[1\] G. O. Chagas, L. C. Coelho, D. Laganà and P. Beraldi. A dynamic drone routing problem with uncertain demand and energy consumption. Transportantion Rsearch Part B: Methodological, 202:103335, 2025]( https://doi.org/10.1016/j.trb.2025.103335)**
+
+**[\[2\] M. W. Ulmer and B. W. Thomas. Same-day delivery with heterogeneous fleets of drones and vehicles. Networks, 72(4):475–505, 2018]( https://doi.org/10.1002/net.21855)**
+
